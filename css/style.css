@@ -1,0 +1,44 @@
+body {
+  background-color:3BE2E2;
+  color:gray;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header, main, nav, footer {
+  text-align: center;
+}
+
+nav a {/* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: white;           /* by default, links are blue */ 
+  }
+
+nav a:hover, #currentPage{ /* pseudo class*/
+  border-bottom:2px gold solid;
+  font-size: 2em;
+  transition: .9s; /*transition effect */
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: green;
+        font-size: 4em;
+        margin-bottom: 0px
+    }
+  
+
+footer {
+  color: white;
+  font-size:.8em;
+}
