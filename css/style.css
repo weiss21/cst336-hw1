@@ -11,33 +11,84 @@ header, main, nav, footer {
   text-align: center;
 }
 
-nav a {/* links within "nav" container */
-    padding:15px;
-    padding-bottom:4px;
-    font-size: 1.8em;
-    text-decoration: none; /* removes underline */
-    color: white;           /* by default, links are blue */ 
-  }
-
-nav a:hover, #currentPage{ /* pseudo class*/
-  border-bottom:2px gold solid;
-  font-size: 2em;
-  transition: .9s; /*transition effect */
+/*BASE*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/*Layout*/
+* {box-sizing: border-box;}
+/*Navigation*/
+nav {
+  position: relative;
+  left: -12em;
+  width: 6em;
+  height: 100%;
+  background: $crimson;
+  font-family: 'Roboto Condensed', sans-serif;
+  transition: left .85s linear;
+}
+.nav ul {
+  float: left;
+  width: 100%;
+}
+.nav a,
+.fa-bars,
+.soc-media a {
+  display: block;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background .35s;
+  &:hover {background: #eb1f48;}
+  &:active {background: #ed365b;}
+}
+.nav a {
+  padding: 1em .5em;
+  width: 100%
+}
+.fa-bars {
+  position: absolute;
+  left: 0em;
+  padding: .25em 0;
+  z-index: 99;
+  width: 2em;
+  background: $crimson;
+  text-align: center;
+  transition: left .75s ease-in-out;
+  &:hover {cursor: pointer;}
+}
+[type="checkbox"] {
+  display: none;
+  &:checked + label {left: 3em;}
+  &:checked ~ nav {left: 0;}
 }
 
-main {
-  display: flex;
-  justify-content: center;
+/*Page Wrapper*/
+.wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(http://www.gratisography.com/pictures/119.jpg) no-repeat;
+  background-size: cover;
 }
-
-h1 {
-        font-family: 'Source Sans Pro', sans-serif;
-        color: green;
-        font-size: 4em;
-        margin-bottom: 0px
-    }
-  
-
+.wrapper > h1 {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  color: $crimson;
+  font-size: 3em;
+  text-align: center;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,.2);
+}
 footer {
   color: white;
   font-size:.8em;
