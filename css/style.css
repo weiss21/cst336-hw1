@@ -1,95 +1,79 @@
-body {
-  background-color:3BE2E2;
-  color:gray;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+body{
+    color: white;
+    /*background-image:url('https://ak4.picdn.net/shutterstock/videos/29797054/thumb/1.jpg');*/
+    background-color: #383838;
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size:cover;*/
+    /*height:100%;*/
 }
 
-header, main, nav, footer {
-  text-align: center;
+header, nav{
+    text-align:center;
 }
 
-/*BASE*/
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-/*Layout*/
-* {box-sizing: border-box;}
-/*Navigation*/
-nav {
-  position: relative;
-  left: -12em;
-  width: 6em;
-  height: 100%;
-  background: $crimson;
-  font-family: 'Roboto Condensed', sans-serif;
-  transition: left .85s linear;
-}
-.nav ul {
-  float: left;
-  width: 100%;
-}
-.nav a,
-.fa-bars,
-.soc-media a {
-  display: block;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background .35s;
-  &:hover {background: #eb1f48;}
-  &:active {background: #ed365b;}
-}
-.nav a {
-  padding: 1em .5em;
-  width: 100%
-}
-.fa-bars {
-  position: absolute;
-  left: 0em;
-  padding: .25em 0;
-  z-index: 99;
-  width: 2em;
-  background: $crimson;
-  text-align: center;
-  transition: left .75s ease-in-out;
-  &:hover {cursor: pointer;}
-}
-[type="checkbox"] {
-  display: none;
-  &:checked + label {left: 3em;}
-  &:checked ~ nav {left: 0;}
+nav a{
+    padding:10px;
+    padding-bottom: 5px;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
 }
 
-/*Page Wrapper*/
-.wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background: url(http://www.gratisography.com/pictures/119.jpg) no-repeat;
-  background-size: cover;
+nav a:hover{
+    border-bottom: 3px orange solid;
+    border-top:3px orange solid;
+    transition: .5s;
+    box-shadow: inset 0 0 0 2em #53a7ea;
+    font-size: 2.5em;
 }
-.wrapper > h1 {
-  position: absolute;
-  top: 45%;
-  width: 100%;
-  color: $crimson;
-  font-size: 3em;
-  text-align: center;
+
+nav{
+    padding-bottom: .8em
 }
-.overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(255,255,255,.2);
+
+article {
+    text-align: left;
 }
-footer {
-  color: white;
-  font-size:.8em;
+
+footer,footer a{
+    clear: both;
+    color:white;
+    text-decoration: none;
+}
+
+main,footer{
+    text-align: center;
+    width:50em;
+    margin:0px auto;
+}
+
+#navHr{
+    width:50em;
+}
+
+#MainPic{
+    float:left;
+    padding-top: 5em;
+    padding-left:5em;
+    margin-left: 3em;
+}
+
+.osxPic{
+    float:left;
+    padding-top: 15em;
+    padding-left:5em;
+    margin-left: 3em;
+}
+
+#windowsPic{
+    float:left;
+    padding-top:10em;
+    padding-left:5em;
+    margin-left: 3em;
+}
+
+.OSTxt{
+    width:23em;
+    float: right;
 }

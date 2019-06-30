@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html>
-<!--
-
-First Website
-and comment
-in html
-(comments can span multiple lines)
-
--->
-
-<!-- This is the head -->
-<!-- All styles and javascript go inside the head -->
+    
     <head>
-        
-        
+        <meta charset='utf-8'/>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <title>Operating Systems</title>
     </head>
-<!-- closing head -->
-
-    <!-- This is the body -->
-    <!-- This is where we place the content of our website -->
     <body>
-      <input type="checkbox" id="checkbox" /><label class="fa fa-bars fa-2x" for="checkbox"></label>
-      <nav role='navigation'>
-     <ul class="nav">
-    <li><a href="#page-home">Home</a></li>
-    <li><a href="#page-about">About</a></li>
-    <li><a href="#page-clients">Clients</a></li>
-    <li><a href="#page-contact">Contact Us</a></li>
-    </ul>
-    <ul class="soc-media">
-    <li><a href="#" class="fa fa-twitter"></a></li>
-    <li><a href="#" class="fa fa-facebook"></a></li>
-    <li><a href="#" class="fa fa-google-plus"></a></li>
-    </ul>
-      </nav>
-  <main class="wrapper">
-  <div class="overlay"></div>
-  <h1>Hello and welcome on our site!</h1>
-  <section class="home" id="page-home"></section>
-  <section class="about" id="page-about">
-        <br /><br />
- 
+        <header>
+            <h1 id="title">Operating Systems</h1>
+        </header>
+        <nav>
+            <hr id="navHr">
+            <a href="index.html">Home</a>
+            <a href="windows.html">Windows</a>
+            <a href="osx.html">MacOS</a>
+            <a href="linux.html">Linux</a>
+        </nav>
+        <main>
+            <figure id="MainPic">
+                <img src="img/Operating-Systems.png" alt="Operating Systems">
+            </figure>
+            <article class="OSTxt">
+                <h2>What is an Operating System?</h2>
+                <p>
+                    An operating system manages the system's resources. 
+                    It is the operating system that coordinates the amount of
+                    memory used by each program. It controls how and when programs
+                    can access hardware. It also tells software what hardware is
+                    available. Additionally, the operating system 
+                </p>
+            </article>
+            <article class="OSTxt">
+                <h2>Types of Operating Systems</h2>
+                <p>
+                    There are different types of operating systems. Many modern 
+                    operating systems depend on a graphical user interface. However,
+                    some operating systems can be run without a GUI. Some people
+                    find that using a command shell is much more empowering. For
+                    the rest of the world, however, the GUI makes it easier to 
+                    communicate with the system. That is why the most popular
+                    operating systems include Windows, Mac OS, and Linux. All three
+                    have different GUI's and feel different.
+                </p>
+            </article>
+        </main>
         
-        <!-- This is the footer -->
-        <!-- The footer goes inside the body but not always -->
         <footer>
-            
-            
+            <hr>
+            <p>
+                <strong>Sources:</strong>
+                    <a href="https://www.gcflearnfree.org/computerbasics/understanding-operating-systems/1/">
+                        Computer Basics: Understanding Operating Systems
+                    </a>
+            </p>
         </footer>
-        <!-- closing footer -->
-        
     </body>
-    <!-- closing body -->
-
 </html>
