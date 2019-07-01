@@ -20,7 +20,7 @@ nav a{
     color: white;
 }
 
-nav a:hover{
+nav a:hover, #currentPage{
     border-bottom: 3px orange solid;
     border-top:3px orange solid;
     transition: .5s;
