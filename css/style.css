@@ -39,6 +39,7 @@ nav{
 }
 .topnav a {
     float: top;
+    float:center;
     background-color: white;
     color: black;
     text-align: top;
