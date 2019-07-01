@@ -38,7 +38,7 @@ nav{
     padding-bottom: .8em
 }
 .topnav a {
-    float: center;
+    float: top;
     background-color: white;
     color: black;
     text-align: top;
