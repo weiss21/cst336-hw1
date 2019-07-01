@@ -37,7 +37,25 @@ nav a:hover, #currentPage{
 nav{
     padding-bottom: .8em
 }
+.topnav a {
+    float: center;
+    background-color: white;
+    color: black;
+    text-align: top;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
 
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: gray;
+    color: white;
+}
 article {
     text-align: left;
 }
