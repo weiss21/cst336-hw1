@@ -1,6 +1,5 @@
 body{
     color: white;
-    /*background-image:url('https://ak4.picdn.net/shutterstock/videos/29797054/thumb/1.jpg');*/
     background-color: #383838;
     /*background-position: center;*/
     /*background-repeat: no-repeat;*/
@@ -81,6 +80,10 @@ main,footer{
     margin-left: 3em;
 }
 
+.border {
+	margin: 0 auto;
+	border: 10px outset #ddd;
+}
 .osxPic{
     float:left;
     padding-top: 15em;
